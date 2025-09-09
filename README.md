@@ -12,45 +12,43 @@ The project integrates **data crawling, information extraction, and evaluation p
 - 🔄 **Workflow Automation**: Support integration with **n8n workflows** for end-to-end automation.  
 
 ## Project Structure
-Summarize_System/
-│── notebooks/ # Jupyter notebooks for LLM evaluation
-│── scripts/ # Data collection & processing scripts
-│── .env.example # Example environment variables
-│── requirements.txt # Python dependencies
-│── README.md # Project documentation
+   ```bash
+      Summarize_System/
+      │─ notebooks/ # Jupyter notebooks for LLM evaluation
+      │─ scripts/ # Data collection & processing scripts
+      │─ .env.example # Example environment variables
+      │─ requirements.txt # Python dependencies
+      │─ README.md # Project documentation
 
-bash
-Copy code
 
 ## Installation
 1. Clone the repository:
    ```bash
    git clone https://github.com/TuanKiet04/RielFezzTool.git
    cd RielFezzTool
-Create and activate a virtual environment:
+   
 
-bash
-Copy code
-python3 -m venv venv
-source venv/bin/activate   # On Linux/Mac
-venv\Scripts\activate      # On Windows
-Install dependencies:
+2. Create and activate a virtual environment:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate   # On Linux/Mac
+   venv\Scripts\activate      # On Windows
 
-bash
-Copy code
-pip install -r requirements.txt
-Configure environment variables:
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
 
-Copy .env.example to .env
+4. Configure environment variables:
+   ```bash
+   Copy .env.example to .env
 
 Add your database credentials, API keys, and model configs
 
 Usage
-Run the notebooks inside notebooks/ to test different LLMs
+- Run the notebooks inside notebooks/ to test different LLMs
 
-Start the summarization pipeline with:
+- Start the summarization pipeline with:
+   ```bash
+      python scripts/run_pipeline.py
+      Integrate with n8n workflows for real-time automation
 
-bash
-Copy code
-python scripts/run_pipeline.py
-Integrate with n8n workflows for real-time automation
