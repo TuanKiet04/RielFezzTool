@@ -106,38 +106,6 @@ services:
       - kietcorn-network
     restart: always
 
-  anythingllm:
-    image: mintplexlabs/anythingllm:latest
-    container_name: anythingllm
-    ports:
-      - "3001:3001"   # Mở web UI tại http://localhost:3001
-    cap_add:
-      - SYS_ADMIN
-    volumes:
-      - anythingllm_data:/app/server/storage  # lưu dữ liệu local
-    env_file:
-      - .env
-    networks:
-      - kietcorn-network
-    depends_on:
-      - ollama
-      - postgres
-    restart: always
-
-  ngrok:
-    image: ngrok/ngrok:latest
-    container_name: ngrok
-    ports:
-        - "8088:4040"
-    environment:
-      - NGROK_AUTHTOKEN=2wgLNOYFkLfwxAUibhra6t87pAT_bj2GudxN7ibcm9oaahzf
-    command:
-      - "http"
-      - "10.4.21.3:5678"
-    networks:
-      - kietcorn-network
-    depends_on:
-      - n8n
 
   appsmith:
     image: appsmith/appsmith-ce
@@ -162,8 +130,6 @@ volumes:
   pgadmin_data:
   ollama_data:
   crawl4ai_app:
-  anythingllm_data:
-  ngrok_data:
   appsmith_stacks:
 
 
