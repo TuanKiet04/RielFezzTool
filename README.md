@@ -12,7 +12,6 @@ The project integrates **data crawling, information extraction, and evaluation p
 - 🔄 **Workflow Automation**: Support integration with **n8n workflows** for end-to-end automation.  
 
 ## Project Structure
-   ```bash
       Summarize_System/
       │─ notebooks/ # Jupyter notebooks for LLM evaluation
       │─ scripts/ # Data collection & processing scripts
