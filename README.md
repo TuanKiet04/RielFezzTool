@@ -25,7 +25,6 @@ The project integrates **data crawling, information extraction, and evaluation p
    ```bash
    git clone https://github.com/TuanKiet04/RielFezzTool.git
    cd RielFezzTool
-   
 
 2. Create and activate a virtual environment:
    ```bash
