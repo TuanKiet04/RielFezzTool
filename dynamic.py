@@ -31,8 +31,8 @@ markdown_generator = DefaultMarkdownGenerator(
 
 llm_strategy = LLMExtractionStrategy(
     llm_config=LLMConfig(
-        provider="gemini/gemini-2.0-flash-001",
-        api_token='AIzaSyCvSWj5RjXFhZ5rSNd-czRyyTHmt6E8R3o'
+        provider=your_model,
+        api_token=your_API_key,
     ),
     schema=Blog.model_json_schema(),
     extraction_type="schema",
